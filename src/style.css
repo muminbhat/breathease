@@ -1,0 +1,458 @@
+.top-bar {
+  background-color: #00B2EC; /* Example blue background */
+  color: white;
+  padding: 0.5rem;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligns content to the right */
+  gap: 1rem; /* Adds some space between the icons and text */
+}
+
+.phone-icon, .email-icon {
+  font-size: 1.2rem; /* Adjusts the size of the icons */
+}
+.navbar {
+  background-color: #F3F3F3;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  height: 50px; /* Adjust based on your logo's aspect ratio */
+}
+
+.nav-links a, .nav-links button {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black; /* Change as needed for links */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links button {
+  padding: 8px 16px;
+  background-color: #00B2EC; /* Changed to your specified color */
+  color: white;
+  border-radius: 20px; /* Increased for more noticeable curved edges */
+  border: none; /* Ensure no border is shown */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover, .nav-links button:hover {
+  opacity: 0.7; /* You might also consider changing the background color slightly on hover for the button */
+  /* Example for button hover effect: */
+  /* background-color: darken(#00B2EC, 10%); */
+}
+.main-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  background-image: url('./images/maingallery.jpg');
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  min-height: 582px; /* Adjust based on your needs */
+}
+
+
+
+/* Adjust this to control the vertical spacing of your text */
+.gallery-text {
+  margin-top: -166px; /* Example: Move text up */
+  color: #151414; /* Choose a text color that stands out against your image */
+  z-index: 1; /* Ensure text is above the image */
+}
+
+/* Button container adjustments remain the same */
+.button-container {
+  position: absolute;
+  bottom: 133px; /* Distance from the bottom */
+  left: 51%; /* Center horizontally */
+  transform: translateX(-50%);
+}
+
+.view-services-btn {
+  padding: 10px 20px;
+  background-color: #00B2EC; /* Your specified color */
+  color: white;
+  border: none;
+  border-radius: 20px; /* Rounded edges */
+  cursor: pointer;
+}
+
+.view-services-btn:hover {
+  opacity: 0.8;
+}
+
+.feather-check-circle {
+  margin-right: 8px; /* Adjust as needed */
+  vertical-align: middle; /* Aligns icon with text */
+}
+html {
+  scroll-behavior: smooth;
+}
+.about-section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* Ensure background covers the section */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+}
+
+
+.plus-logo-container {
+  position: absolute;
+  left: 0; /* Align to the left side of the screen */
+  bottom: -11%; /* Adjust this value to control vertical positioning */
+  transform: translateY(50%); /* Adjust based on the container's height to center */
+  width: 111px; /* Width as per your design */
+  height: 386px; /* Height as per your design */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the logo inside the container */
+}
+
+.plus-logo {
+  width: 100%; /* Make the logo fill the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.services-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.services-images, .services-new-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.service-image {
+  width: 238px; /* Adjust based on your preference */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.new-service-image{
+  width:220px;
+  transition: transform 0.3 ease;
+  cursor:pointer;
+}
+
+.services-new-images {
+  position: relative;
+  width: 100%;
+  padding: 70px 0; /* Adjust based on your preference */
+  background: url('./images/rectangle.jpeg.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  gap: 60px;
+  /*justify-content: space-around; /* Adjust this to manage spacing */
+  align-items: center;
+}
+.plus-logo-container-2 {
+  position: absolute;
+  right: 0; /* Align to the right side of the screen */
+  bottom: -180%; /* Adjust this value to control vertical positioning */
+  transform: translateY(50%); /* Adjust based on the container's height to center */
+  width: 111px; /* Width as per your design */
+  height: 386px; /* Height as per your design */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the logo inside the container */
+}
+
+.plus-logo-2 {
+  width: 100%; /* Make the logo fill the container */
+  height: auto; /* Maintain aspect ratio */
+}
+.book-appointment-section form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book-appointment-section input[type="text"],
+.book-appointment-section input[type="email"],
+.book-appointment-section input[type="tel"],
+.book-appointment-section textarea {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.book-appointment-section input[type="text"],
+.book-appointment-section input[type="email"],
+.book-appointment-section input[type="tel"] {
+  width: calc(50% - 10px); /* Adjust based on parent's padding and margins */
+}
+
+.book-appointment-section textarea {
+  width: 100%;
+}
+
+.book-appointment-section button {
+  background-color: #00B2EC;
+  color: #FFFFFF;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+
+@media (max-width: 780px) {
+  .top-bar {
+      padding: 0.5rem 0.2rem; /* Reduce padding */
+      font-size: 0.9rem; /* Adjust font size for space efficiency */
+      margin-right: -8.1rem;
+  }
+
+  .contact-info {
+      justify-content: center; /* Center content on small screens */
+      gap: 0.5rem; /* Reduce space between items */
+  }
+
+  .phone-icon, .email-icon {
+      font-size: 1rem; /* Slightly reduce icon size */
+  }
+
+  .navbar {
+      padding: 0.5rem; /* Reduce padding */
+      flex-direction: column; /* Stack logo and nav items */
+      margin-right: -8.1rem;
+  }
+
+  .nav-container {
+      flex-direction: column;
+  }
+
+  .nav-links a, .nav-links button {
+      margin: 10px 0; /* Adjust margins for stacked links */
+      font-size: 0.9rem; /* Reduce font size for space */
+  }
+
+  .main-gallery {
+      min-height: 300px; /* Adjust height for smaller screens */
+      height: 297px;
+      width: 517px;
+  }
+
+  @media (max-width: 768px) {
+    .gallery-text {
+      font-size: xx-small !important; /* Slightly smaller font on mobile */
+      height: 91px; /* Allow height to adjust */
+      width: auto; /* Ensure width fits mobile screens */
+      right: 0; /* Reset or adjust for mobile layout */
+      position: relative;
+      top: 35px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .button-container {
+      position: relative; /* Adjust for mobile */
+      bottom: -98px;
+    }
+  }
+
+  .services-section{
+      padding: 84px 102px; /* Adjust padding */
+      margin-right: -129px;
+
+  }
+  .book-appointment-section {
+    padding: 84px 102px; /* Adjust padding */
+    margin-right: -129px;
+
+}
+
+  .services-images, .services-new-images {
+      flex-direction: column; /* Stack images vertically */
+      gap: 10px; /* Reduce gap */
+  }
+
+  .service-image, .new-service-image {
+      width: 100%; /* Full width for better visibility */
+      max-width: 250px; /* Limit max width */
+      margin: 0 auto; /* Center images */
+  }
+
+  .plus-logo-container, .plus-logo-container-2 {
+      display: none; /* Hide additional decorative logos on small screens for space */
+  }
+
+  /* Form adjustments for smaller screens */
+  .book-appointment-section input[type="text"],
+  .book-appointment-section input[type="email"],
+  .book-appointment-section input[type="tel"],
+  .book-appointment-section textarea {
+      width: 100%; /* Full width inputs */
+      margin: 10px 0; /* Adjust margins */
+  }
+
+  .book-appointment-section button {
+      margin-top: 20px; /* Increase margin above the button */
+  }
+}
+
+/* Enhancements for very small screens, like older phones or very narrow devices */
+@media (max-width: 480px) {
+  .top-bar, .navbar, .nav-links a, .nav-links button, .gallery-text {
+      font-size: 0.8rem; /* Further reduce font size */
+  }
+
+  .nav-links a, .nav-links button {
+      padding: 5px 10px; /* Adjust padding for smaller touch targets */
+  }
+
+  .main-gallery {
+      min-height: 200px; /* Further reduce for very small devices */
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  #get-in-touch-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 40px; /* Adjust top margin as needed */
+  }
+
+  #get-in-touch-2 > div {
+    position: relative;
+    right: -27px;
+    width: 41%;
+    margin-bottom: -300px;
+    /* Adjust margin between sections */
+    text-align: justify;
+    
+  }
+
+  #get-in-touch-2 img {
+    width: 80%; /* Adjust image width as needed */
+    max-width: 200px; /* Limit maximum width */
+    margin-bottom: 15px; /* Adjust margin bottom for spacing */
+  }
+
+  #get-in-touch-2 h3 {
+    font-size: 1.2rem; /* Adjust font size for headings */
+    margin-bottom: 10px; /* Adjust margin bottom for spacing */
+  }
+
+  #get-in-touch-2 a, #get-in-touch-2 p {
+    font-size: 0.9rem; /* Adjust font size for links and paragraphs */
+    margin-bottom: 5px; /* Adjust margin bottom for spacing */
+  }
+
+  #get-in-touch-2 .another-main {
+    width: 80%; /* Adjust width as needed */
+    max-width: 200px; /* Limit maximum width */
+    margin-top: 20px; /* Adjust top margin as needed */
+  }
+
+  #get-in-touch-2 .lifeline-logo {
+    width: 100%;
+    margin-top: 30px; /* Adjust top margin as needed */
+  }
+
+  #get-in-touch-2 > div:last-child {
+    margin-bottom: 0; /* Remove bottom margin for the last div */
+  }
+
+  #get-in-touch-2 img,
+  #get-in-touch-2 h3,
+  #get-in-touch-2 a,
+  #get-in-touch-2 p {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .get-in-touch-section {
+    padding: 20px 10px;
+  }
+
+  .get-in-touch-section > div {
+    flex-direction: column;
+    margin: 0 auto; /* Center the content */
+  }
+
+  .get-in-touch-section > div > div {
+    margin-right: 0;
+    margin-bottom: 20px; /* Add some space between the map and the text section on mobile */
+    text-align: center; /* Center align the content for smaller screens */
+    flex: none; /* Override any flex settings to let the content use full width */
+  }
+
+  .get-in-touch-section img {
+    width: 100%; /* Ensure images are responsive and fit within their containers */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .get-in-touch-section a {
+    justify-content: center; /* Center the link and icon horizontally when stacked */
+  }
+
+  .get-in-touch-section div:last-child {
+    position: static; /* Reset any positioned elements to flow naturally */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    margin-right: -149px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 36px 23px; /* Adjust padding for smaller screens */
+    right: 6px;
+  }
+}
