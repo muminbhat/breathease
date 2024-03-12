@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from './Modal';
 import axios from 'axios';
+import api from '../key/backend';
 
 const swal = require("sweetalert2");
 
@@ -29,7 +30,7 @@ const BookAnAppointment = () => {
         setLoading(true);
         try {
           const response = await axios.post(
-            `http://127.0.0.1:8000/api/appointment/post/`,
+            `${api}api/appointment/post/`,
             formData
           );
           if (response.status === 201) {
